@@ -1,244 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main22Activity"
-    android:background="@drawable/shape3">
+    android:background="@drawable/shape3"
+    android:scrollbarSize="3dp"
+    android:scrollbarStyle="insideInset">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:scrollbarStyle="insideInset"
-        android:scrollbarSize="2dp"
-        android:fillViewport="true"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape"
+            android:text="NUMBERS"
+            android:textSize="30dp"
+            android:textColor="#ffff"
+            android:paddingLeft="30dp"
+            android:paddingTop="8dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/Numbers"
-                android:layout_width="263dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="79dp"
-                android:layout_marginTop="38dp"
-                android:layout_marginEnd="68dp"
-                android:background="@drawable/shape"
-                android:text="NUMBERS"
-                android:textAlignment="center"
-                android:textColor="#ffff"
-                android:textSize="30dp" />
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
 
             <ImageView
-                android:id="@+id/oneI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:background="@drawable/one"
-                android:layout_alignTop="@+id/Numbers"
-                android:layout_marginTop="63dp"/>
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/one" />
+
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/two"
+                android:layout_marginLeft="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/oneI"
                 android:text="1"
-                android:textColor="#ffff"
                 android:textSize="50dp"
-                android:layout_marginRight="10dp"
-                android:layout_alignBottom="@id/oneI"/>
-
-            <ImageView
-                android:id="@+id/twoI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignLeft="@id/one"
-                android:layout_alignTop="@id/Numbers"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="63dp"
-                android:background="@drawable/two" />
+                android:textColor="#ffff"
+                android:layout_marginLeft="55dp"/>
 
             <TextView
-                android:id="@+id/two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/twoI"
-                android:layout_marginTop="230dp"
                 android:text="2"
-                android:textColor="#ffff"
                 android:textSize="50dp"
-                android:layout_alignBottom="@id/twoI"
-                android:layout_marginRight="10dp"/>
+                android:textColor="#ffff"
+                android:layout_marginLeft="200dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
 
             <ImageView
-                android:id="@+id/threeI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignTop="@+id/oneI"
-                android:layout_marginTop="218dp"
-                android:background="@drawable/three" />
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/three" />
+
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/four"
+                android:layout_marginLeft="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/threeI"
-                android:layout_alignBottom="@id/threeI"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
                 android:text="3"
+                android:textSize="50dp"
                 android:textColor="#ffff"
-                android:textSize="50dp" />
-
-            <ImageView
-                android:id="@+id/fourI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignLeft="@id/three"
-                android:layout_alignTop="@id/twoI"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="218dp"
-                android:background="@drawable/four" />
+                android:layout_marginLeft="55dp"/>
 
             <TextView
-                android:id="@+id/four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/twoI"
-                android:layout_marginTop="230dp"
                 android:text="4"
-                android:textColor="#ffff"
                 android:textSize="50dp"
-                android:layout_alignBottom="@id/fourI"
-                android:layout_marginRight="10dp"/>
+                android:textColor="#ffff"
+                android:layout_marginLeft="200dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
 
             <ImageView
-                android:id="@+id/fiveI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignTop="@+id/threeI"
-                android:layout_marginTop="218dp"
-                android:background="@drawable/five" />
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/five" />
+
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/six"
+                android:layout_marginLeft="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/fiveI"
-                android:layout_alignBottom="@id/fiveI"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
                 android:text="5"
+                android:textSize="50dp"
                 android:textColor="#ffff"
-                android:textSize="50dp" />
-
-            <ImageView
-                android:id="@+id/sixI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignLeft="@id/five"
-                android:layout_alignTop="@id/fourI"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="218dp"
-                android:background="@drawable/six" />
+                android:layout_marginLeft="55dp"/>
 
             <TextView
-                android:id="@+id/six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/sixI"
-                android:layout_marginTop="230dp"
                 android:text="6"
-                android:textColor="#ffff"
                 android:textSize="50dp"
-                android:layout_alignBottom="@id/sixI"
-                android:layout_marginRight="10dp"/>
+                android:textColor="#ffff"
+                android:layout_marginLeft="200dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
 
             <ImageView
-                android:id="@+id/sevenI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignTop="@+id/fiveI"
-                android:layout_marginTop="218dp"
-                android:background="@drawable/seven" />
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seven" />
+
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eight"
+                android:layout_marginLeft="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/seven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/sevenI"
-                android:layout_alignBottom="@id/sevenI"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="-8dp"
                 android:text="7"
-                android:textColor="#ffff"
-                android:textSize="50dp" />
-
-            <ImageView
-                android:id="@+id/eightI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignLeft="@id/seven"
-                android:layout_alignTop="@id/sixI"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="218dp"
-                android:background="@drawable/eight" />
-
-            <TextView
-                android:id="@+id/eight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignRight="@id/eightI"
-                android:layout_marginTop="230dp"
-                android:text="8"
-                android:textColor="#ffff"
                 android:textSize="50dp"
-                android:layout_alignBottom="@id/eightI"
-                android:layout_marginRight="-2dp"/>
-
-            <ImageView
-                android:id="@+id/nineI"
-                android:layout_width="180dp"
-                android:layout_height="190dp"
-                android:layout_alignTop="@+id/sevenI"
-                android:layout_marginTop="218dp"
-                android:background="@drawable/nine"
-                android:layout_marginLeft="110dp"/>
+                android:textColor="#ffff"
+                android:layout_marginLeft="55dp"/>
 
             <TextView
-                android:id="@+id/nine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@id/nineI"
-                android:layout_alignBottom="@id/nineI"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="-8dp"
-                android:text="9"
+                android:text="8"
+                android:textSize="50dp"
                 android:textColor="#ffff"
-                android:textSize="50dp" />
+                android:layout_marginLeft="200dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nine"
+                android:layout_marginLeft="120dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textSize="50dp"
+                android:textColor="#ffff"
+                android:layout_marginLeft="180dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="150dp"
-                android:layout_height="70dp"
-                android:layout_alignTop="@id/nine"
-                android:layout_alignRight="@id/nineI"
-                android:layout_marginTop="110dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/shape"
+                android:layout_height="150dp"
                 android:text="END"
-                android:textAlignment="center"
+                android:textSize="50dp"
                 android:textColor="#ffff"
-                android:textSize="50dp" />
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/shape"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:paddingTop="10dp"/>
 
-        </RelativeLayout>
+        </LinearLayout>
 
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

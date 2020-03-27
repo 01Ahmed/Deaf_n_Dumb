@@ -6,7 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-public class Main32Activity extends AppCompatActivity {
+public class NumberTestActivity extends AppCompatActivity {
 
     private ViewPager pager;
     private PagerAdapter pagerAdapter;
@@ -14,6 +14,6 @@ public class Main32Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main31);
+        setContentView(R.layout.activity_alphabet_test);
     }
 }

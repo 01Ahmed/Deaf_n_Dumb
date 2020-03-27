@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main31Activity"
+    tools:context=".AlphabetTestActivity"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/shape3">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

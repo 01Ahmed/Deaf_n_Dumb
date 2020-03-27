@@ -22,7 +22,7 @@ public class Main3Activity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Main3Activity.this,Main31Activity.class);
+                Intent intent = new Intent(Main3Activity.this, AlphabetTestActivity.class);
                 Main3Activity.this.startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class Main3Activity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Main3Activity.this,Main32Activity.class);
+                Intent intent = new Intent(Main3Activity.this, NumberTestActivity.class);
                 Main3Activity.this.startActivity(intent);
             }
         });

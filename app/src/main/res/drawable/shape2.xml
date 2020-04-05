@@ -8,7 +8,7 @@
 
     <gradient
         android:angle="90"
-        android:centerColor="#800080"
+        android:centerColor="#ffffff"
         android:centerX="20"
         android:centerY="80"
         />

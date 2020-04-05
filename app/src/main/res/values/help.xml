@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="helpButton">
+        <br>
+            !Sign Language Trainer For Deaf and Dumb Children!\n
+        </br>
+
+        <br>
+            \nThe purpose of building this sort of application is,
+            there is no such real time gesture recognition application that provides real time recognition.
+            Special Child Trainer | Deaf n Dumb Application will be implemented for mobile phone users
+            in the world which allow them to communicate with special persons.\n
+        </br>
+
+        <br>
+            \nWe introduce you five buttons at main screen.\n
+            1. Learn - Symbols\n
+            2. Conduct - Test\n
+            3. Make Communication\n
+            4. Help\n
+            5. Quit\n
+        </br>
+
+        <br>
+            \n-> By using (Learn-Symbol) menu user will learn different signs of hands to communicate.
+            Training session will include many different signs and like alphabets from A-Z counting
+            from 1-9 and others.\n
+        </br>
+
+        <br>
+            \n-> In testing session user will solve some test which he/she learn from training session.
+            There are some multiple options you have to select right options or right sign for asking
+            question.\n
+        </br>
+
+        <br>
+            \n-> In Make-Communication button user will able to show the signs in camera and then camera detect the
+            signs and show the results of that particular sign.\n
+        </br>
+
+        <br>
+            \n-> In help button you will learn how to use this application and use it for your purpose\n
+        </br>
+
+        <br>
+            \n->At the end to quit the application you just need to press Quit button.\n
+        </br>
+
+    </string>
+
+</resources>

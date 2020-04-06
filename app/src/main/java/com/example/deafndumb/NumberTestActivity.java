@@ -36,6 +36,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question1.setPic2(R.drawable.one);
         question1.setPic3(R.drawable.w);
         question1.setPic4(R.drawable.p);
+        question1.setCorrect_ans("2");
 
         questions.add(question1);
 
@@ -46,6 +47,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question2.setPic2(R.drawable.zero);
         question2.setPic3(R.drawable.two);
         question2.setPic4(R.drawable.t);
+        question2.setCorrect_ans("3");
 
         questions.add(question2);
 
@@ -56,6 +58,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question3.setPic2(R.drawable.l);
         question3.setPic3(R.drawable.p);
         question3.setPic4(R.drawable.three);
+        question3.setCorrect_ans("4");
 
         questions.add(question3);
 
@@ -66,6 +69,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question4.setPic2(R.drawable.k);
         question4.setPic3(R.drawable.q);
         question4.setPic4(R.drawable.b);
+        question4.setCorrect_ans("1");
 
         questions.add(question4);
 
@@ -76,6 +80,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question5.setPic2(R.drawable.t);
         question5.setPic3(R.drawable.five);
         question5.setPic4(R.drawable.n);
+        question5.setCorrect_ans("3");
 
         questions.add(question5);
 
@@ -86,6 +91,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question6.setPic2(R.drawable.six);
         question6.setPic3(R.drawable.l);
         question6.setPic4(R.drawable.e);
+        question6.setCorrect_ans("2");
 
         questions.add(question6);
 
@@ -96,6 +102,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question7.setPic2(R.drawable.s);
         question7.setPic3(R.drawable.u);
         question7.setPic4(R.drawable.seven);
+        question7.setCorrect_ans("4");
 
         questions.add(question7);
 
@@ -106,6 +113,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question8.setPic2(R.drawable.w);
         question8.setPic3(R.drawable.j);
         question8.setPic4(R.drawable.seven);
+        question8.setCorrect_ans("1");
 
         questions.add(question8);
 
@@ -116,6 +124,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question9.setPic2(R.drawable.c);
         question9.setPic3(R.drawable.nine);
         question9.setPic4(R.drawable.d);
+        question9.setCorrect_ans("3");
 
         questions.add(question9);
 
@@ -126,6 +135,7 @@ public class NumberTestActivity extends AppCompatActivity {
         question0.setPic2(R.drawable.zero);
         question0.setPic3(R.drawable.nine);
         question0.setPic4(R.drawable.q);
+        question0.setCorrect_ans("2");
 
         questions.add(question0);
 

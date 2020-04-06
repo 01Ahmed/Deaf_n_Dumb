@@ -93,9 +93,9 @@ public class QuestionsAdapter extends PagerAdapter {
 
     private void checkCorrectAns(String correct, String choosen){
         if (correct.equals(choosen)){
-            Toast.makeText(context, "Your answer is correct", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Your Answer is Correct", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Your answer is incorrect. Try Again!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Your Answer is Incorrect. Try Again!", Toast.LENGTH_SHORT).show();
         }
     }
 

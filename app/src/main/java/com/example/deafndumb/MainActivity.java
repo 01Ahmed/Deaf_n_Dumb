@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button5 = (Button) findViewById(R.id.button5);
-        button5.setOnClickListener(new View.OnClickListener(){
+        button5.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ActivityHelp.class);
+                Intent intent = new Intent(MainActivity.this, Main5Activity.class);
                 MainActivity.this.startActivity(intent);
             }
         });
@@ -58,5 +58,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

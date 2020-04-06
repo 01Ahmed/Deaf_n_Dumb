@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -49,7 +50,7 @@ public class QuestionsAdapter extends PagerAdapter {
         ImageView pic3 = view.findViewById(R.id.pic3);
         ImageView pic4 = view.findViewById(R.id.pic4);
 
-        QuestionModel question = questions.get(position);
+        final QuestionModel question = questions.get(position);
 
         questionText.setText(question.getQuestion());
         pic1.setImageResource(question.getPic1());
@@ -60,13 +61,42 @@ public class QuestionsAdapter extends PagerAdapter {
         pic1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkCorrectAns(question.getCorrect_ans(), "1");
+            }
+        });
 
+        pic2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkCorrectAns(question.getCorrect_ans(), "2");
+            }
+        });
+
+        pic3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkCorrectAns(question.getCorrect_ans(), "3");
+            }
+        });
+
+        pic4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkCorrectAns(question.getCorrect_ans(), "4");
             }
         });
 
         container.addView(view, 0);
 
         return view;
+    }
+
+    private void checkCorrectAns(String correct, String choosen){
+        if (correct.equals(choosen)){
+            Toast.makeText(context, "Your answer is correct", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(context, "Your answer is incorrect. Try Again!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override

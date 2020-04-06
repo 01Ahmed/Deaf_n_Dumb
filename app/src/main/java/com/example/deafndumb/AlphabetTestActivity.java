@@ -36,6 +36,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionA.setPic2(R.drawable.w);
         questionA.setPic3(R.drawable.d);
         questionA.setPic4(R.drawable.a);
+        questionA.setCorrect_ans("4");
 
         questions.add(questionA);
 
@@ -46,6 +47,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionB.setPic2(R.drawable.b);
         questionB.setPic3(R.drawable.m);
         questionB.setPic4(R.drawable.z);
+        questionB.setCorrect_ans("2");
 
         questions.add(questionB);
 
@@ -56,6 +58,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionC.setPic2(R.drawable.b);
         questionC.setPic3(R.drawable.c);
         questionC.setPic4(R.drawable.d);
+        questionC.setCorrect_ans("3");
 
         questions.add(questionC);
 
@@ -66,6 +69,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionD.setPic2(R.drawable.b);
         questionD.setPic3(R.drawable.d);
         questionD.setPic4(R.drawable.o);
+        questionD.setCorrect_ans("3");
 
         questions.add(questionD);
 
@@ -76,6 +80,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionE.setPic2(R.drawable.n);
         questionE.setPic3(R.drawable.e);
         questionE.setPic4(R.drawable.p);
+        questionE.setCorrect_ans("3");
 
         questions.add(questionE);
 
@@ -86,6 +91,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionF.setPic2(R.drawable.y);
         questionF.setPic3(R.drawable.f);
         questionF.setPic4(R.drawable.k);
+        questionF.setCorrect_ans("3");
 
         questions.add(questionF);
 
@@ -96,6 +102,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionG.setPic2(R.drawable.f);
         questionG.setPic3(R.drawable.g);
         questionG.setPic4(R.drawable.l);
+        questionG.setCorrect_ans("3");
 
         questions.add(questionG);
 
@@ -106,6 +113,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionH.setPic2(R.drawable.x);
         questionH.setPic3(R.drawable.u);
         questionH.setPic4(R.drawable.h);
+        questionH.setCorrect_ans("4");
 
         questions.add(questionH);
 
@@ -116,6 +124,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionI.setPic2(R.drawable.d);
         questionI.setPic3(R.drawable.t);
         questionI.setPic4(R.drawable.i);
+        questionI.setCorrect_ans("4");
 
         questions.add(questionI);
 
@@ -126,6 +135,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionJ.setPic2(R.drawable.a);
         questionJ.setPic3(R.drawable.j);
         questionJ.setPic4(R.drawable.d);
+        questionJ.setCorrect_ans("3");
 
         questions.add(questionJ);
 
@@ -136,6 +146,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionK.setPic2(R.drawable.f);
         questionK.setPic3(R.drawable.s);
         questionK.setPic4(R.drawable.v);
+        questionK.setCorrect_ans("1");
 
         questions.add(questionK);
 
@@ -146,6 +157,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionL.setPic2(R.drawable.l);
         questionL.setPic3(R.drawable.w);
         questionL.setPic4(R.drawable.r);
+        questionL.setCorrect_ans("2");
 
         questions.add(questionL);
 
@@ -156,6 +168,7 @@ public class AlphabetTestActivity extends AppCompatActivity {
         questionM.setPic2(R.drawable.p);
         questionM.setPic3(R.drawable.m);
         questionM.setPic4(R.drawable.x);
+        questionM.setCorrect_ans("3");
 
         questions.add(questionM);
 

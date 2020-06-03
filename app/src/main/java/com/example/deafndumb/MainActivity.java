@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.deafndumb.automtl.ScannerActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button button2;
     private Button button3;
+    private Button button4;
     private Button button5;
     private Button button6;
 
@@ -36,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Main3Activity.class);
                 MainActivity.this.startActivity(intent);
+            }
+        });
+
+        button4 = findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ScannerActivity.class);
+                startActivity(intent);
             }
         });
 

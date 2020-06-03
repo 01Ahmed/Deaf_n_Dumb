@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "340260569260",
+    "firebase_url": "https://deaf-n-dumb-43f5e.firebaseio.com",
+    "project_id": "deaf-n-dumb-43f5e",
+    "storage_bucket": "deaf-n-dumb-43f5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340260569260:android:f73fc2043f422c249e5f09",
+        "android_client_info": {
+          "package_name": "com.example.deafndumb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340260569260-655ei4pas5vcsdds6f68a7ok8b97sm67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEJKaKGt6vq3Kzg1VNVyTRKK2fMFLUwr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340260569260-655ei4pas5vcsdds6f68a7ok8b97sm67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

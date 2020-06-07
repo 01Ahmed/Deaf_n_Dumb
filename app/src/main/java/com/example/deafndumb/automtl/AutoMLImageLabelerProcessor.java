@@ -38,6 +38,8 @@ public class AutoMLImageLabelerProcessor extends VisionProcessorBase<List<Fireba
     private Task<Void> modelDownloadingTask = null;
     private final Mode mode;
 
+    private String text;
+
     /**
      * The detection mode of the processor. Different modes will have different behavior on whether or
      * not waiting for the model download complete.
@@ -60,7 +62,7 @@ public class AutoMLImageLabelerProcessor extends VisionProcessorBase<List<Fireba
         optionsBuilder = new FirebaseVisionOnDeviceAutoMLImageLabelerOptions.Builder(localModel);
 
         FirebaseVisionOnDeviceAutoMLImageLabelerOptions options = optionsBuilder
-                .setConfidenceThreshold(0.10f)   // Evaluate your model in the Firebase console
+                .setConfidenceThreshold(0.40f)   // Evaluate your model in the Firebase console
                 // to determine an appropriate threshold.
                 .build();
 
@@ -118,14 +120,16 @@ public class AutoMLImageLabelerProcessor extends VisionProcessorBase<List<Fireba
         Log.d(TAG, "onSuccess: ");
 
         for (FirebaseVisionImageLabel label : labels) {
-            String text = label.getText();
+            text += label.getText();
             float confidence = label.getConfidence();
             Log.d(TAG, "onSuccess: Text: " + text + " confidence: " + confidence);
         }
 
-        LabelGraphic labelGraphic = new LabelGraphic(graphicOverlay, labels);
-        graphicOverlay.add(labelGraphic);
-        graphicOverlay.postInvalidate();
+        ScannerActivity.text.setText(text);
+
+//        LabelGraphic labelGraphic = new LabelGraphic(graphicOverlay, labels);
+//        graphicOverlay.add(labelGraphic);
+//        graphicOverlay.postInvalidate();
     }
 
     @Override

@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.WindowManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.deafndumb.R;
@@ -35,6 +36,8 @@ public class ScannerActivity extends AppCompatActivity {
 
     private CameraSource cameraSource = null;
 
+    public static TextView text;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,7 @@ public class ScannerActivity extends AppCompatActivity {
             Log.e(TAG, "Barcode scanner could not go into fullscreen mode!");
         }
 
+        text = findViewById(R.id.text);
         preview = findViewById(R.id.cameraSourcePReview);
         graphicOverlay = findViewById(R.id.graphicOverlay);
 
